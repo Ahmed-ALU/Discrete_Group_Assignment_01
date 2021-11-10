@@ -1,18 +1,18 @@
 
 
-x_list = list([20, 30, 40, 50])
-y_list = list([7, 6, 11, 5])
+x_list = list()
+y_list = list()
 result_list = list()
 
-# x_len = int(input("Please enter the number of elements in the list [X]: "))
-# for i in range(x_len):
-#     inp = int(input("Please input the list element here: "))
-#     x_list.append(inp)
+x_len = int(input("Please enter the number of elements in the list [X]: "))
+for i in range(x_len):
+    inp = int(input("Please input the list element here: "))
+    x_list.append(inp)
 
-# y_len = int(input("Please enter the number of elements in the list [y]: "))
-# for i in range(y_len):
-#     inp = int(input("Please input the list element here: "))
-#     y_list.append(inp)
+y_len = int(input("Please enter the number of elements in the list [y]: "))
+for i in range(y_len):
+    inp = int(input("Please input the list element here: "))
+    y_list.append(inp)
 
 print("X = ", x_list)
 print("Y = ", y_list)

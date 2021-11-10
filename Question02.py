@@ -80,8 +80,9 @@ def Q2():
         print ("False, B is not a subset of A \n")
     
     # (b) The answer of  [A - B]
-    print (f"The value of A-B = {user_input_set01-user_input_set02} \n") 
-
+    diff = user_input_set01.difference(user_input_set02)
+    print(f"The value of A-B = {diff} \n")
+    
     # (c) The answer of [A x B]
 
     user_input_set01 = list(user_input_set01)
