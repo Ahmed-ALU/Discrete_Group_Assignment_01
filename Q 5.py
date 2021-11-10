@@ -1,22 +1,41 @@
-x = [ 20, 40, 60, 80, 80]
-y = [ 3, 4]
-print("X = ", x)
-print("Y = ", y)
-Value = bool(True)
 
-for numy in y: # There is exists Y that ....
-    if Value == False:
-            break
-    for numx in x: # for all of X ...
+
+x_list = list([20, 30, 40, 50])
+y_list = list([5, 6, 11, 7])
+result_list = list()
+
+x_len = int(input("Please enter the number of elements in the list [X]: "))
+for i in range(x_len):
+    inp = int(input("Please input the list element here: "))
+    x_list.append(inp)
+
+y_len = int(input("Please enter the number of elements in the list [y]: "))
+for i in range(y_len):
+    inp = int(input("Please input the list element here: "))
+    y_list.append(inp)
+
+print("X = ", x_list)
+print("Y = ", y_list)
+
+Value = bool()
+
+
+for numy in y_list: # There is exists Y that ....
+    
+    for numx in x_list: # for all of X ...
         if numx%numy == 0: #The condition
-            Value = True
+            Value = True #continue looping
         else:
-            Value = False # IF there is only one value of x that is false, the condition is false
-            break
-        
-                    
+            Value = False # IF there is only one value of x that is false, the condition is false for that specific element of Y
+            break # break and go to the next y if exist
+    
+    if Value == True:
+        result_list.append(True)  
+    elif Value == False:
+        result_list.append(False)
 
-if Value == True:
+
+if True in result_list:
     print("The condition Y|X is True")
 else: 
     print("The condition is False")
